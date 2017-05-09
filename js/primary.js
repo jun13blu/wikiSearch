@@ -68,7 +68,7 @@ $(function(){
             $resultField.text("");
             var length = resultList[1].length;
             for(var i = 0; i < length; i++){
-                $resultField.append("<a href='" + resultList[3][i] + "'><div class='link'><h2>" + resultList[1][i] + "</h2><p>" + shorten(resultList[2][i]) + "</p></div></a>");
+                $resultField.append("<a href='" + resultList[3][i] + "' target='_blank'><div class='link'><h2>" + resultList[1][i] + "</h2><p>" + shorten(resultList[2][i]) + "</p></div></a>");
             }
         }
 
