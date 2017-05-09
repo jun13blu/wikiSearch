@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html {
+    height: 100%;
+    background: linear-gradient(to bottom right, #667eea, #764ba2);
+}
+
+body {
+    height: inherit;
+}
+
+h1 {
+    font-family: 'Bungee', cursive;
+    color: white;
+    font-weight: 100;
+    font-size: 4em;
+    text-align: center;
+}
+
+.search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.search * {
+    font-size: 1.5em;
+}
+
+p {
+    color: white;
+    display: inline-block;
+}
+
+input {
+    display: none;
+    border: none;
+    border-bottom: white solid 1px;
+    background: none;
+    transition: 0.5s;
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
