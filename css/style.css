@@ -10,7 +10,6 @@ html {
     height: 100%;
     width: 100%;
     max-height: 100%;
-    min-height: 400px;
     overflow: hidden;
     background: linear-gradient(to bottom right, #667eea, #764ba2);
 }
@@ -112,7 +111,7 @@ input::-webkit-input-placeholder {
     text-decoration: none;
 }
 
-#random:hover, #random:focus, #random:active {
+#random:hover, #random:active {
     background: white;
     color: #764ba2;
 }
@@ -146,7 +145,7 @@ input::-webkit-input-placeholder {
     transition-property: color, background-color;
 }
 
-.link:hover, .link:focus, .link:active{
+.link:hover, .link:active{
     background: white;
     color: #764ba2;
 }
@@ -169,6 +168,6 @@ a:first-child .link{
     color: rgba(255, 255, 255, 0.8);
 }
 
-.link:hover p, .link:focus p, .link:active p, .link:hover h2, .link:focus h2, .link:active h2{
+.link:hover p, .link:active p, .link:hover h2, .link:active h2{
     color: #764ba2;
 }
