@@ -16,7 +16,7 @@ $(function(){
         function bind(){
             $searchIcon.on("mouseenter", peek);
             $searchField.on("mouseleave", hide);
-            $search.on("click", expand);
+            $searchField.on("click", expand);
             $searchCancel.on("click", shrink);
         }
         bind();
@@ -42,7 +42,7 @@ $(function(){
         function shrink(){
             $resultField.text("");
             $searchField.val("");
-            $search.off();
+            $searchField.off();
             $searchField.removeClass("expanded").addClass("hidden").off();
             $search.removeClass("expanded");
             $searchCancel.addClass("hidden");
