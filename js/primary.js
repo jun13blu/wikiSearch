@@ -2,6 +2,7 @@ $(function(){
     var wikigoo = (function(){
         //cache dom
         var $search = $(".search");
+        var $searchIcon = $search.find(".fa-search");
         var $searchField = $search.find("input");
         var $searchCancel = $search.find("#cancel");
         var $resultField = $(".results");
@@ -13,8 +14,8 @@ $(function(){
 
         //bind events
         function bind(){
-            $search.on("mouseenter", peek);
-            $search.on("mouseleave", hide);
+            $searchIcon.on("mouseenter", peek);
+            $searchField.on("mouseleave", hide);
             $search.on("click", expand);
             $searchCancel.on("click", shrink);
         }
